@@ -1,0 +1,21 @@
+<div class="row mt-4">
+    <div class="col-md-4 mb-4" *ngFor="let post of postArr">
+        <app-post-card [postObj]="post"></app-post-card>
+
+        <div class="card p-3 mb-5 h-100">
+            <div class="card-header">
+                <h1>{{post.title}}</h1>
+
+            </div>
+            <div class="card-body">
+            <h1>{{post.body}}</h1>
+
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <button mat-raised-button color="primary" class="mr-2">edit</button>
+                <button mat-raised-button color="warn">update</button>
+
+            </div>
+        </div>
+    </div>
+</div>
